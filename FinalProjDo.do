@@ -1,5 +1,5 @@
 //Created by Michael Roberts
-cd "C:\Users\Micha\OneDrive\School\College\USC 2020\Spring 2021\Econ 436\Final Project"
+cd
 capture log close
 set logtype text
 log using "FinalProj", replace
