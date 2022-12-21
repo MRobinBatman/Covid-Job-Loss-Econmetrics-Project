@@ -48,3 +48,38 @@ Included in my models as the reference groups for the dummy variables were the w
 
 ## The Results
 For the results, I will start by reiterating the models above, but filling in the coefficients to show the estimates I got in my results. Then I will outline how and if they differ from what I expected.
+<p align="center">Model 1
+</p>
+
+```math
+𝐽𝐿𝐷𝐶 ̂= 𝛼 ̂+𝟎.𝟎𝟏𝟔𝟐∗𝑀𝑒𝑡𝑟𝑜+0.00565∗𝐴𝑔𝑒+−0.00008∗𝐴𝑔𝑒2+0.0115∗𝑆𝑒𝑥 + 0.0550∗𝐻𝑖𝑠𝑝𝑎𝑛𝑖𝑐+ 0.0208∗𝐵𝑙𝑎𝑐𝑘+
+```
+```math
+0.0259∗𝐴𝑠𝑖𝑎𝑛+0.0256∗𝑂𝑡ℎ𝑒𝑟𝑅𝑎𝑐𝑒+0.00909∗𝑆𝑜𝑚𝑒𝐶𝑜𝑙𝑙𝑒𝑔𝑒+ −0.0452∗𝐵𝑎𝑐ℎ𝑒𝑙𝑜𝑟𝑠+ −0.0878∗𝑀𝑎𝑠𝑡𝑒𝑟𝑠𝑃𝑙𝑢𝑠
+```
+In this initial model, I started out simply determining whether there was a significant difference in job loss according to this data between those living inside and outside of metro areas. Living in a metro area was found to be only statistically significant at the 5% level, which was less significant than I had expected, since I assumed that the larger population in metro areas and cramped living conditions would be a large contributing factor in JLDC. My results show that living in a metro area is associated with a 1.62% increase in the likelihood of JLDC. This means that those living outside of metro areas were less likely to experience JLDC when controlling for age, sex, race, and education.
+<p align="center">Model 2
+</p>
+
+```math
+𝐽𝐿𝐷𝐶 ̂= 𝛼 ̂+0.0162∗𝑀𝑒𝑡𝑟𝑜+0.00565∗𝐴𝑔𝑒+−0.00008∗𝐴𝑔𝑒2+0.0115∗𝑆𝑒𝑥 + 0.0550∗𝐻𝑖𝑠𝑝𝑎𝑛𝑖𝑐+ 0.0208∗𝐵𝑙𝑎𝑐𝑘+
+```
+```math
+0.0259∗𝐴𝑠𝑖𝑎𝑛+0.0256∗𝑂𝑡ℎ𝑒𝑟𝑅𝑎𝑐𝑒+0.00909∗𝑆𝑜𝑚𝑒𝐶𝑜𝑙𝑙𝑒𝑔𝑒+ −0.0452∗𝐵𝑎𝑐ℎ𝑒𝑙𝑜𝑟𝑠+ −0.0878∗𝑀𝑎𝑠𝑡𝑒𝑟𝑠𝑃𝑙𝑢𝑠 +
+```
+```math
+0.180∗𝑆𝑒𝑙𝑓𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑑 + −𝟎.𝟎𝟑𝟖𝟏∗𝑁𝑜𝑛𝑃𝑟𝑜𝑓𝑖𝑡𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑑+ −0.0673∗𝐺𝑜𝑣𝑒𝑟𝑛𝑚𝑒𝑛𝑡𝐸𝑚𝑝𝑙𝑜𝑦𝑒d
+```
+Within this model, I added dummy variables for different “classes” of employment which would represent the different types of employer a person could have. Interestingly, controlling for employment made living in a metro area no longer statistically significant at the 5% level, which I believe is an artifact of the standard error for lives in metro being greatly reduced by this change. When I ran an F-test on the variables I added to the model this time, the p value showed that these variables are statistically significant. I found that working for a non-profit is associated with a 3.81% decrease in the likelihood of JLDC compared to working for a for-profit company (controlling for race, age, sex, and education). This itself was significant at the 1% level in this model, which initially gave me the idea that this was a good indicator that my model was representing the difference in for-profit and non-for profit companies, however that notion was quickly challenged by the results of the final model.
+<p align="center">Model 3
+</p>
+
+```math
+𝐽𝐿𝐷𝐶 ̂= 𝛼 ̂+0.0418∗𝑀𝑒𝑡𝑟𝑜+ −0.00359∗𝐴𝑔𝑒+ 0.0000323∗𝐴𝑔𝑒2+0.0467∗𝑆𝑒𝑥 + 0.0415∗𝐻𝑖𝑠𝑝𝑎𝑛𝑖𝑐+ 0.0171∗𝐵𝑙𝑎𝑐𝑘+
+```
+```math
+0.0196∗𝐴𝑠𝑖𝑎𝑛+ 0.00595∗𝑂𝑡ℎ𝑒𝑟𝑅𝑎𝑐𝑒+ −0.00822∗𝑆𝑜𝑚𝑒𝐶𝑜𝑙𝑙𝑒𝑔𝑒+ −0.0522∗𝐵𝑎𝑐ℎ𝑒𝑙𝑜𝑟𝑠+ −0.0645∗𝑀𝑎𝑠𝑡𝑒𝑟𝑠𝑃𝑙𝑢𝑠 + 0.220∗𝑆𝑒𝑙𝑓𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑑 +
+```
+```math
+ −0.0172∗𝑁𝑜𝑛𝑃𝑟𝑜𝑓𝑖𝑡𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑑+ −0.0451∗𝐺𝑜𝑣𝑒𝑟𝑛𝑚𝑒𝑛𝑡𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑑 + 𝟎.𝟎𝟔𝟏𝟗∗𝑅𝑒𝑚𝑜𝑡𝑒+ −𝟎.𝟏𝟎𝟗∗𝑅𝑒𝑚𝑜𝑡𝑒And𝑀𝑒𝑡𝑟𝑜
+```
