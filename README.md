@@ -42,3 +42,9 @@ I also chose to include the interaction term for instances where people lived in
 
 ## The Data
 Included in my models as the reference groups for the dummy variables were the white group, the high school education group, and the for-profit employed group. I also excluded those who’s data did not have information for the likelihood of JLDC, race, class of employment, and remote work status in each relevant regression above. This, however, I do not believe skewed my results, since there were still over 37,473 observations of individuals who did have data in those categories; even in the one which I had to drop the highest number of observations.
+<p align="center">
+<img src="https://raw.githubusercontent.com/MRobinBatman/Covid-Job-Loss-Econmetrics-Project/main/General_Summary_Stats.PNG" />
+</p>
+
+## The Results
+For the results, I will start by reiterating the models above, but filling in the coefficients to show the estimates I got in my results. Then I will outline how and if they differ from what I expected.
